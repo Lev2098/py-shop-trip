@@ -37,8 +37,7 @@ class Customer:
         self.location = shop.location
 
     def buy_products(self, shop: Shop) -> None:
-        print(f"\nDate: "
-              f"{datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}")
+        print(f"\nDate: {datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")}")
         print(f"Thanks, {self.name}, for your purchase!")
         print("You have bought:")
         for product, quantity in self.product_cart.items():
